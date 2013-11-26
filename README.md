@@ -7,7 +7,7 @@ The script reads the body:after content attribute of the html document. You will
 
 ##Usage
 
-Insert the following rule into any stylesheet you want to detect changing the content attribute to the key you would like to use.
+Insert the following rule into any stylesheet you want to detect, changing the content attribute to the key you would like to use.
 
 ````css
 body:after {
@@ -16,10 +16,10 @@ body:after {
 }
 ````
 
-Using media queries to switch between stylesheets, you will be able to detect which one is active in your JavaScripts using the following methods:
+Using media queries to switch between stylesheets, you will be able to detect which one is active in JavaScript using the following methods:
 
 ````js
-service.breakpoint
+service.breakpoint()
 ````
 Returns the key used in the content attribute (see above) in the currently active stylesheet.
 
